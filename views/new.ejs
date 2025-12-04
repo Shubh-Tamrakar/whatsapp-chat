@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write your msg..</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form container */
+        form {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Input and textarea styling */
+        input[type="text"], textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Textarea specific styles */
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Placeholder styling */
+        input::placeholder, textarea::placeholder {
+            color: #888;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: center;
+        }
+
+        button:hover {
+            background-color: #357ab7;
+        }
+
+        /* Button focus effect */
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(72, 143, 222, 0.5);
+        }
+
+        /* Small spacing between inputs */
+        br {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/chats">
+        <input type="text" placeholder="Who are you." name="from">
+        <br><br>
+        <textarea name="msg" placeholder="Write your message.."></textarea>
+        <br><br>
+        <input type="text" placeholder="add receiver" name="to">
+        <br><br>
+        <button>Creat Chat!</button>
+    </form>
+</body>
+</html>

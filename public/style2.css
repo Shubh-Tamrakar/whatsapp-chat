@@ -1,0 +1,87 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header style */
+h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+/* Form button styles */
+form button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Reduced padding for smaller buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size */
+    transition: background-color 0.3s ease;
+    margin-right: 8px; /* Space between buttons */
+}
+
+form button:hover {
+    background-color: #357ab7;
+}
+
+/* Inline form button positioning */
+form {
+    display: inline-block; /* Keeps the forms in the same line */
+}
+
+/* Chat container */
+.chat {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px; /* Reduced gap between chat divs */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat message style */
+.msg {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+/* Chat sender and receiver info */
+.chat p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.chat i {
+    color: #888;
+}
+
+/* Horizontal line separator */
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+/* Timestamp style */
+.chat .timestamp {
+    font-size: 12px;
+    color: #aaa;
+    text-align: right;
+}
+
+/* Create new chat button positioning */
+form button:first-of-type {
+    display: block;
+    margin: 0 auto 20px auto;
+}
